@@ -110,3 +110,48 @@ let yearTurn100 = birthDate.getFullYear() + 100;
 console.log("Age in days:", ageInDays);
 console.log("Age in hours:", ageInHours);
 console.log("Year you will turn 100:", yearTurn100);
+
+// ============================
+// Exercise 2: Build Functions
+// ============================
+
+// 1. Calculate area of rectangle
+function calculateArea(width, height) {
+    return width * height;
+}
+
+console.log("Area:", calculateArea(5, 10));
+
+
+// 2. Convert Celsius to Fahrenheit
+function celsiusToFahrenheit(celsius) {
+    return (celsius * 9/5) + 32;
+}
+
+console.log("Fahrenheit:", celsiusToFahrenheit(25));
+
+
+// 3. Check if number is even
+function isEven(number) {
+    return number % 2 === 0;
+}
+
+console.log("Is 4 even?", isEven(4));
+console.log("Is 7 even?", isEven(7));
+
+
+// 4. Get initials from full name
+function getInitials(fullName) {
+    let names = fullName.split(" ");
+    return names[0][0] + names[1][0];
+}
+
+console.log("Initials:", getInitials("Irene Njoki"));
+
+
+// 5. Reverse a string
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
+
+console.log("Reversed:", reverseString("JavaScript"));
