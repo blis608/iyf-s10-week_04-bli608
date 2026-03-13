@@ -155,3 +155,15 @@ function reverseString(str) {
 }
 
 console.log("Reversed:", reverseString("JavaScript"));
+
+// ============================
+// Exercise 3: Default Parameters
+// ============================
+
+function greet(name = "Guest", greeting = "Hello") {
+    return `${greeting}, ${name}!`;
+}
+
+console.log(greet());
+console.log(greet("Alice"));
+console.log(greet("Bob", "Hi"));
