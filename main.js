@@ -167,3 +167,14 @@ function greet(name = "Guest", greeting = "Hello") {
 console.log(greet());
 console.log(greet("Alice"));
 console.log(greet("Bob", "Hi"));
+
+// ============================
+// Tip Calculator
+// ============================
+
+function calculateTip(bill, tipPercent = 15) {
+    return bill * (tipPercent / 100);
+}
+
+console.log("Tip amount:", calculateTip(100));
+console.log("Tip amount:", calculateTip(200, 20));
