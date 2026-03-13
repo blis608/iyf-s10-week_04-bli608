@@ -19,6 +19,7 @@ console.log(typeof name);
 console.log(typeof age);
 console.log(typeof isStudent);
 
+
 // ============================
 // Exercise 1: Number Operations
 // ============================
@@ -111,6 +112,7 @@ console.log("Age in days:", ageInDays);
 console.log("Age in hours:", ageInHours);
 console.log("Year you will turn 100:", yearTurn100);
 
+
 // ============================
 // Exercise 2: Build Functions
 // ============================
@@ -156,6 +158,7 @@ function reverseString(str) {
 
 console.log("Reversed:", reverseString("JavaScript"));
 
+
 // ============================
 // Exercise 3: Default Parameters
 // ============================
@@ -167,6 +170,7 @@ function greet(name = "Guest", greeting = "Hello") {
 console.log(greet());
 console.log(greet("Alice"));
 console.log(greet("Bob", "Hi"));
+
 
 // ============================
 // Tip Calculator
