@@ -345,3 +345,63 @@ console.log(calculate(10, "/", 5));   // 2
 console.log(calculate(10, "/", 0));   // Error
 console.log(calculate(10, "%", 3));   // 1
 console.log(calculate(2, "**", 3));   // 8
+
+
+// ============================
+// Task 8.1: Arrays
+// ============================
+
+// Creating arrays
+const fruits = ["apple", "banana", "orange"];
+const numbersArray = [1, 2, 3, 4, 5];
+const mixed = ["hello", 42, true, null];
+
+console.log(fruits[0]);
+console.log(fruits.length);
+
+fruits.push("grape");
+fruits.unshift("mango");
+fruits.pop();
+fruits.shift();
+
+
+// ============================
+// Exercise 2: Array Methods
+// ============================
+
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach(num => console.log(num * 2));
+
+const doubled = numbers.map(num => num * 2);
+console.log(doubled);
+
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers);
+
+const firstEven = numbers.find(num => num % 2 === 0);
+console.log(firstEven);
+
+const sum = numbers.reduce((total, num) => total + num, 0);
+console.log(sum);
+
+console.log(numbers.includes(3));
+
+
+// ============================
+// Build Tasks
+// ============================
+
+const values = [5, 12, -3, 7, -8, 20];
+
+const doubledNumbers = values.map(num => num * 2);
+console.log("Doubled:", doubledNumbers);
+
+const positiveNumbers = values.filter(num => num >= 0);
+console.log("Positive numbers:", positiveNumbers);
+
+const firstGreaterThan10 = values.find(num => num > 10);
+console.log("First > 10:", firstGreaterThan10);
+
+const product = values.reduce((total, num) => total * num, 1);
+console.log("Product:", product);
